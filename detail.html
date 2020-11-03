@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>ShowTrackr</title>
+  <script src="https://kit.fontawesome.com/4812412aa4.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="logoBrand">
+        <a class="navbar-brand p-2" id="logo" href="index.html">Show<b>Trackr</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">Add</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="part1Content">
+      <div class="row" style="padding-top:20px;">
+        <div class="col-sm-2">
+          <div id="movieDetailImage"></div>
+          <div style="padding-top:10px;">
+            <a href="login.html"><button type="button" class="btn btn-primary" style="font-size:12px; width:100%; border-radius:0;">Login to Subscribe</button></a>
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <div class="detailTitleBar">
+            <div style="float:left;"><h3 id="movieTitle" style="font-weight:bold;">Titanic</h3></div>
+            <div style="float:right; color:red;"><h3 style="font-weight:bold;"><i class="fas fa-heart"></i> <span id="movieRate">9.5</span></h3></div>
+          </div>
+          <div style="padding-top:30px;">
+            <h6 style="font-weight:bold;"><br><span><i class="far fa-calendar-alt"></i> </span><span id="showTime">Sunday 9:00PM on HBO</span></h6>
+          </div>
+          <div>
+            <p id="movieDetails">Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="part2Content">
+      <p id="nextEpisode">Directed by: <span id="dirName"></span></p>
+    </div>
+
+    <div class="part3Content">
+      <div class="episodeTitleBar">
+        <p style="font-weight:bold; font-size:12px; padding-left:10px; padding-top:10px;"><i class="fas fa-film"></i><span> COMMENTS</span></p>
+      </div>
+      <div class="episodeContentBar">
+        <h6><span id="episodeContentTitle1" style="font-weight:bold;">Inside Titanic </span><span id="episodeContentTitleSub1" class="text-muted" style="padding-left:2px;">Romantic Movie</span></h6>
+        <h6><span><i class="far fa-clock"></i> </span><span id="episodeContentDate1">26/06/1998</span></h6>
+        <p id="episodeContentDetail1">This film is lovable and romance movie..</p>
+      </div>
+      <div class="episodeContentBar">
+        <h6><span id="episodeContentTitle2" style="font-weight:bold;">Inside Titanic </span><span id="episodeContentTitleSub2" class="text-muted" style="padding-left:2px;">Romantic Movie</span></h6>
+        <h6><span><i class="far fa-clock"></i> </span><span id="episodeContentDate2">26/06/1998</span></h6>
+        <p id="episodeContentDetail2">This film is lovable and romance movie..</p>
+      </div>
+      <div class="episodeContentBar">
+        <h6><span id="episodeContentTitle3" style="font-weight:bold;">Inside Titanic </span><span id="episodeContentTitleSub3" class="text-muted" style="padding-left:2px;">Romantic Movie</span></h6>
+        <h6><span><i class="far fa-clock"></i> </span><span id="episodeContentDate3">26/06/1998</span></h6>
+        <p id="episodeContentDetail3">This film is lovable and romance movie..</p>
+      </div>
+    </div>
+  </body>
+</html>

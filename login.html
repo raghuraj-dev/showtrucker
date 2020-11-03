@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShowTrackr</title>
+    <script src="https://kit.fontawesome.com/4812412aa4.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="logoBrand">
+        <a class="navbar-brand p-2" id="logo" href="index.html">Show<b>Trackr</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">Add</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="logInArea">
+      <div class="logInTitle">
+        <p class="font-weight-bolder">Log in</p>
+      </div>
+      <form id="logInFormValidate">
+        <div class="input-group mb-3 logInGroup">
+          <div class="input-group-prepend logInGroupPre">
+            <span class="input-group-text logInGroupPre"><i class="fas fa-at"></i></span>
+          </div>
+          <input type="email" class="form-control logInInput" id="logInEmail" placeholder="Email">
+        </div>
+        <div class="input-group mb-3 logInGroup">
+          <div class="input-group-prepend logInGroupPre">
+            <span class="input-group-text logInGroupPre"><i class="fas fa-key"></i></span>
+          </div>
+          <input type="password" id="logInPassword" class="form-control logInInput" placeholder="Password">
+        </div>
+        <input type="submit" class="btn btn-success logInSubmitBtn" value="Log in">
+      </form>
+      <div class="text-center logInBody2">
+        <p>
+          <a><b>Forgot your password?</b></a><br>
+          <span class="text-secondary">Don't have an account yet? </span>
+          <b><a href="signup.html" style="color:#000;">Sign up</a></b>
+        </p>
+        <div style="margin-left:auto; margin-right:auto; margin-top:-10px;">
+          <div style="float:left; width:40%; margin-left:5%;"><hr/></div>
+          <div style="float:right; width:40%; margin-right:5%;"><hr/></div>
+          <div style="padding-top:5px;"><b>or</b></div>
+        </div>
+        <button type="button" class="btn btn-primary socialBtn">
+          <i class="fa">&#xf09a;</i>
+          <b>Sign in with Facebook</b>
+        </button><br>
+        <button type="button" class="btn btn-danger socialBtn">
+          <i class="fa">&#xf0d5;</i>
+          <b>Sign in with Google</b>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

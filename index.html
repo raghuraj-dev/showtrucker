@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>ShowTrackr</title>
+    <script src="https://kit.fontawesome.com/4812412aa4.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="logoBrand">
+        <a class="navbar-brand p-2" id="logo" href="index.html">Show<b>Trackr</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">Add</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="movieSelectionArea">
+      <div class="letterSelection">
+        <a href="redirect.html#numX"><span>0-9</span></a>
+        <a href="redirect.html#A"><span>A</span></a>
+        <a href="redirect.html#B"><span>B</span></a>
+        <a href="redirect.html#C"><span>C</span></a>
+        <a href="redirect.html#D"><span>D</span></a>
+        <a href="redirect.html#E"><span>E</span></a>
+        <a href="redirect.html#F"><span>F</span></a>
+        <a href="redirect.html#G"><span>G</span></a>
+        <a href="redirect.html#H"><span>H</span></a>
+        <a href="redirect.html#I"><span>I</span></a>
+        <a href="redirect.html#J"><span>J</span></a>
+        <a href="redirect.html#K"><span>K</span></a>
+        <a href="redirect.html#L"><span>L</span></a>
+        <a href="redirect.html#M"><span>M</span></a>
+        <a href="redirect.html#N"><span>N</span></a>
+        <a href="redirect.html#O"><span>O</span></a>
+        <a href="redirect.html#P"><span>P</span></a>
+        <a href="redirect.html#Q"><span>Q</span></a>
+        <a href="redirect.html#R"><span>R</span></a>
+        <a href="redirect.html#S"><span>S</span></a>
+        <a href="redirect.html#T"><span>T</span></a>
+        <a href="redirect.html#U"><span>U</span></a>
+        <a href="redirect.html#V"><span>V</span></a>
+        <a href="redirect.html#W"><span>W</span></a>
+        <a href="redirect.html#X"><span>X</span></a>
+        <a href="redirect.html#Y"><span>Y</span></a>
+        <a href="redirect.html#Z"><span>Z</span></a>
+      </div>
+      <div class="categorySelection">
+        <a href="redirect.html#action"><span class="badge categoryBtn">Action</span></a>
+        <a href="redirect.html#adventure"><span class="badge categoryBtn">Adventure</span></a>
+        <a href="redirect.html#animation"><span class="badge categoryBtn">Animation</span></a>
+        <a href="redirect.html#children"><span class="badge categoryBtn">Children</span></a>
+        <a href="redirect.html#comedy"><span class="badge categoryBtn">Comedy</span></a>
+        <a href="redirect.html#crime"><span class="badge categoryBtn">Crime</span></a>
+        <a href="redirect.html#documentary"><span class="badge categoryBtn">Documentary</span></a>
+        <a href="redirect.html#drama"><span class="badge categoryBtn">Drama</span></a>
+        <a href="redirect.html#family"><span class="badge categoryBtn">Family</span></a>
+        <a href="redirect.html#fantasy"><span class="badge categoryBtn">Fantasy</span></a>
+        <a href="redirect.html#food"><span class="badge categoryBtn">Food</span></a>
+        <a href="redirect.html#home"><span class="badge categoryBtn">Home and Garden</span></a>
+        <a href="redirect.html#horror"><span class="badge categoryBtn">Horror</span></a>
+        <a href="redirect.html#seris"><span class="badge categoryBtn">Mini-Seris</span></a>
+        <br>
+        <a href="redirect.html#mystery"><span class="badge categoryBtn">Mystery</span></a>
+        <a href="redirect.html#news"><span class="badge categoryBtn">News</span></a>
+        <a href="redirect.html#reality"><span class="badge categoryBtn">Reality</span></a>
+        <a href="redirect.html#romance"><span class="badge categoryBtn">Romance</span></a>
+        <a href="redirect.html#sci-Fi"><span class="badge categoryBtn">Sci-Fi</span></a>
+        <a href="redirect.html#sport"><span class="badge categoryBtn">Sport</span></a>
+        <a href="redirect.html#suspense"><span class="badge categoryBtn">Suspense</span></a>
+        <a href="redirect.html#talkshow"><span class="badge categoryBtn">Talk Show</span></a>
+        <a href="redirect.html#trailer"><span class="badge categoryBtn">Trailer</span></a>
+        <a href="redirect.html#travel"><span class="badge categoryBtn">Travel</span></a>
+      </div>
+    </div>
+
+    <!-- start the body-->
+    <div id="movieDisplayArea" class="container">
+      <div class="row">
+        <div class="col-sm-8 movieDisplayTitleBar">
+            <span class="movieDisplayTitle" style="font-weight:bold;">TOP 12 SHOWS</span>
+        </div>
+        <div class="col-sm-4 movieDisplayTitleBar2">
+          <div>
+            <input class="form-control searchInput" type="search" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row movieRow1">
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#1" id="link1"><div id="moviePhoto1"></div></a>
+          <div class="text-center movieName1">2.0</div>
+          <div class="text-muted text-center cotegry1">Action</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#2" id="link2"><div id="moviePhoto2"></div></a>
+          <div class="text-center movieName2">Asuran</div>
+          <div class="text-muted text-center cotegry2">Action</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#3" id="link3"><div id="moviePhoto3"></div></a>
+          <div class="text-center movieName3">Bigil</div>
+          <div class="text-muted text-center cotegry3">Action</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#4" id="link4"><div id="moviePhoto4"></div></a>
+          <div class="text-center movieName4">Dev</div>
+          <div class="text-muted text-center cotegry4">Action</div>
+        </div>
+      </div>
+
+      <div class="row movieRow2">
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#5" id="link5"><div id="moviePhoto5"></div></a>
+          <div class="text-center movieName5">Kaala</div>
+          <div class="text-muted text-center cotegry5">Drama</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#6" id="link6"><div id="moviePhoto6"></div></a>
+          <div class="text-center movieName6">M.S.Dhoni</div>
+          <div class="text-muted text-center cotegry6">Sport</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#7" id="link7"><div id="moviePhoto7"></div></a>
+          <div class="text-center movieName7">96</div>
+          <div class="text-muted text-center cotegry7">Romance</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#8" id="link8"><div id="moviePhoto8"></div></a>
+          <div class="text-center movieName8">Naanum Rowdy thaan</div>
+          <div class="text-muted text-center cotegry8">Comedy</div>
+        </div>
+      </div>
+
+      <div class="row movieRow3">
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#9" id="link9"><div id="moviePhoto9"></div></a>
+          <div class="text-center movieName9">Titanic</div>
+          <div class="text-muted text-center cotegry9">Romance</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#10" id="link10"><div id="moviePhoto10"></div></a>
+          <div class="text-center movieName10">The Time machine</div>
+          <div class="text-muted text-center cotegry10">Sci-Fi</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#11" id="link11"><div id="moviePhoto11"></div></a>
+          <div class="text-center movieName11">The Terminator</div>
+          <div class="text-muted text-center cotegry11">Sci-Fi</div>
+        </div>
+
+        <div class="col-sm-3 singleMovie">
+          <a href="detail.html#12" id="link12"><div id="moviePhoto12"></div></a>
+          <div class="text-center movieName12">Avatar</div>
+          <div class="text-muted text-center cotegry12">Sci-Fi</div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

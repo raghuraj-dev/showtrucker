@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShowTrackr</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="logoBrand">
+        <a class="navbar-brand p-2" id="logo" href="index.html">Show<b>Trackr</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link active" href="add.html">Add</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <table class="table"  id="addBox">
+        <thead>
+          <tr>
+            <th id="tableHeading">ADD TV SHOW</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <span><b>Name</b></span>
+              <form class="form-group" id="addShowForm">
+                <input type="text" class="form-control" placeholder="Enter TV show name" id="tvShowInput">
+                <div style="padding-top:10px;">
+                  <input type="submit" class="btn btn-primary" id="addSubmitBtn" value="ADD" disabled>
+                  <span style="padding-left: 10px; color:green;" id="tvShowDisplayMsg"></span>
+                </div>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

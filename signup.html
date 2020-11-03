@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ShowTrackr</title>
+    <script src="https://kit.fontawesome.com/4812412aa4.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="logoBrand">
+        <a class="navbar-brand p-2" id="logo" href="index.html">Show<b>Trackr</b></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="add.html">Add</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="signup.html">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="signUpArea">
+      <div class="logInTitle">
+        <p class="font-weight-bolder">Sign up</p>
+      </div>
+      <form id="signUpValidation">
+        <div class="input-group mb-3 logInGroup">
+          <div class="input-group-prepend logInGroupPre shadowPart1">
+            <span class="input-group-text logInGroupPre borderPart1"><i class="fas fa-user"></i></span>
+          </div>
+          <input type="text" id="signUpName" class="form-control logInInput" placeholder="Name">
+        </div>
+        <div id="nameErrorMsg" style="color:red;padding-left: 5%; margin-top: -10px; margin-bottom: 15px; display:none;"></div>
+        <div class="input-group mb-3 logInGroup">
+          <div class="input-group-prepend logInGroupPre shadowPart2">
+            <span class="input-group-text logInGroupPre borderPart2"><i class="fas fa-at"></i></span>
+          </div>
+          <input type="email" id="signUpEmail" class="form-control logInInput" placeholder="Email">
+        </div>
+        <div id="emailErrorMsg" style="color:red;padding-left: 5%; margin-top: -10px; margin-bottom: 15px; display:none;"></div>
+        <div class="input-group mb-3 logInGroup">
+          <div class="input-group-prepend logInGroupPre shadowPart3">
+            <span class="input-group-text logInGroupPre borderPart3"><i class="fas fa-key"></i></span>
+          </div>
+          <input type="password" id="signUpPassword" class="form-control logInInput" placeholder="Password">
+        </div>
+        <div id="pwdErrorMsg" style="color:red;padding-left: 5%; margin-top: -10px; margin-bottom: 15px; display:none;"></div>
+        <p class="text-center" style="font-size:12px;"><span class="text-muted">By clicking on Sign up, you agree to </span><b>terms &<br>
+        conditions </b><span class="text-muted">and </span><b>privacy policy</b></p>
+        <input type="submit" class="btn btn-primary logInSubmitBtn" value="Sign up">
+      </form>
+      <p class="text-center" style="font-size:12px; padding-top:20px; padding-bottom: 15px;"> <span class="text-muted">Already have an account?</span> <a href="login.html" style="color:#000;"><b>Log in now</b></a></p>
+    </div>
+  </body>
+</html>
